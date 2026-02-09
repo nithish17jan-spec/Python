@@ -1,0 +1,88 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOnef9OiXkkKo2dkDNfDqc8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nithish17jan-spec/Python/blob/main/PRACTICE%20PROBLEM%20ATM%20MACHINE%20.%20ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ddi9BE-Ruhvn",
+        "outputId": "c035765b-79c7-49d2-e00c-a0d5abaafe17"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "WELCOME TO INDIAN BANK\n",
+            "1.WANT TO CHECK BALANCE        2.WANT TO WITHDRAWL AMOUNT\n",
+            "enter your choise:2\n",
+            "enter amount:2000\n",
+            "take your cash rs: 2000\n",
+            "\n",
+            "do you want check balance(Yes/NO)yes\n",
+            "BALANCE rs: 8000\n",
+            "INVALID INPUT.Please choose 1 or 2\n"
+          ]
+        }
+      ],
+      "source": [
+        "#CONDITIONAL STATEMENT\n",
+        "print(\"WELCOME TO INDIAN BANK\")\n",
+        "print(\"1.WANT TO CHECK BALANCE\\\n",
+        "        2.WANT TO WITHDRAWL AMOUNT\")\n",
+        "choice=int(input(\"enter your choise:\"))\n",
+        "\n",
+        "b=10000\n",
+        "if(choice==2):\n",
+        "  b2=int(input(\"enter amount:\"))\n",
+        "  if(b2<=b):\n",
+        "    if(b2%100==0):\n",
+        "      print(\"take your cash rs:\",b2)\n",
+        "      b=b-b2\n",
+        "      print()\n",
+        "      c=input(\"do you want check balance(Yes/NO)\").lower()\n",
+        "      if(c=='yes'):\n",
+        "        print(\"BALANCE rs:\",b)\n",
+        "      else:\n",
+        "        print(\"THANK YOU\")\n",
+        "\n",
+        "\n",
+        "if(choice==1):\n",
+        "  if(b>500):\n",
+        "    print(\"YOUR BALANCE IS rs\",b)\n",
+        "  else:\n",
+        "    print(\"YOUR BALANCE IS\",b,\"ITS IS BELOW THAN MINIUM BALANCE RS 500\")\n",
+        "else:\n",
+        "  print(\"INVALID INPUT.Please choose 1 or 2\")\n"
+      ]
+    }
+  ]
+}
